@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Asif Zulfiqar - Web Developer",
+  title: "Asif Zulfiqar - Software Engineer",
   description:
     "Hi, I'm Asif Zulfiqar, a passionate Software Engineer with expertise in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Reactjs, Nextjs, Node.js, Express, MongoDB, WordPress, Git/GitHub and Typescript. Explore my work and experience in building dynamic, scalable web applications and crafting visually stunning, interactive web solutions.",
   keywords: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Asif Zulfiqar - Software Engineer",
     description:
       "Explore the world of web development with Asif Zulfiqar, a Software Engineer skilled in HTML, CSS, JavaScript, Tailwind CSS, Reactjs, Nextjs, Node.js, Express, MongoDB, WordPress, Git/GitHub and Typescript. Discover visually stunning and interactive web solutions in my portfolio.",
-    url: "https://asifzulfiqar.vercel.app/",
+    url: "https://www.asifzulfiqar.pro",
     image: "https://asifzulfiqar.vercel.app/assets/images/asif.png",
   },
   linkedin: {
