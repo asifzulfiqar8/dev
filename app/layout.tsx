@@ -36,13 +36,26 @@ export const metadata: Metadata = {
     description:
       "Explore the world of web development with Asif Zulfiqar, a Software Engineer skilled in HTML, CSS, JavaScript, Tailwind CSS, Reactjs, Nextjs, Node.js, Express, MongoDB, WordPress, Git/GitHub and Typescript. Discover visually stunning and interactive web solutions in my portfolio.",
     url: "https://www.asifzulfiqar.pro",
-    image: "https://asifzulfiqar.vercel.app/assets/images/asif.png",
+    images: [
+      {
+        url: "https://asifzulfiqar.vercel.app/assets/images/asif.png",
+        width: 1200,
+        height: 630,
+        alt: "Asif Zulfiqar - Software Engineer",
+      },
+    ],
   },
-  linkedin: {
-    profile: "https://www.linkedin.com/in/asifzulfiqar8/",
-  },
-  github: {
-    profile: "https://github.com/asifzulfiqar8",
+  authors: [
+    {
+      name: "Asif Zulfiqar",
+      url: "https://www.asifzulfiqar.pro",
+    },
+  ],
+  alternates: {
+    types: {
+      "application/x-github": "https://github.com/asifzulfiqar8",
+      "application/x-linkedin": "https://www.linkedin.com/in/asifzulfiqar8/",
+    },
   },
 };
 
