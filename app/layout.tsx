@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./providers/theme-provider";
+
+const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Asif Zulfiqar - Software Engineer",
@@ -55,8 +58,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning className="light">
+      <body
+        className={`${geist.className} antialiased bg-[var(--white)] text-[var(--black)] dark:bg-[var(--black)] dark:text-[var(--white)]`}
+      >
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

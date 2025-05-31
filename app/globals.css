@@ -1,8 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --white: #ece7e1;
-  --black: #1a1818;
-  --primary: #000000;
-  --secondary: #ffffff;
+  --bg-color: #ece7e1;
+  --text-color: #1a1818;
+  --primary: #125bed;
+  --secondary: #ff4500;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+.dark {
+  --bg-color: #1a1818;
+  --text-color: #ece7e1;
+  --primary: #125bed;
+  --secondary: #ff4500;
+}
+
+@theme {
+  --color-bgColor: var(--bg-color);
+  --color-textColor: var(--text-color);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+body {
+  font-family: var(--font-sans) !important;
+}
+
+button {
+  cursor: pointer !important;
 }
