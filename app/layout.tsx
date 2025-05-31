@@ -60,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="light">
       <body
-        className={`${geist.className} antialiased bg-[var(--white)] text-[var(--black)] dark:bg-[var(--black)] dark:text-[var(--white)]`}
+        className={`${geist.className} antialiased min-h-screen bg-bgColor flex flex-col`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
-import Footer from "./components/footer/Footer";
+import { Footer } from "./components/footer";
+import { HeroSection } from "./components/sections/hero";
 
 // This enables Static Site Generation
 export const dynamic = "force-static";
@@ -14,9 +15,12 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-bgColor">
+    <>
       <Header />
+      <main className="flex-1">
+        <HeroSection />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

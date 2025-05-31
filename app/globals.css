@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 :root {
-  --bg-color: #ece7e1;
+  --bg-color: #F2F2F2;
   --text-color: #1a1818;
   --primary: #125bed;
   --secondary: #ff4500;
@@ -11,7 +11,7 @@
 
 .dark {
   --bg-color: #1a1818;
-  --text-color: #ece7e1;
+  --text-color: #F2F2F2;
   --primary: #125bed;
   --secondary: #ff4500;
 }

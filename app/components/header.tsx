@@ -24,11 +24,11 @@ export function Header() {
               alt="Asif Zulfiqar"
               width={40}
               height={40}
-              className="rounded-full border-2 border-primary"
+              className="rounded-full border border-gray-300"
             />
             <span className="text-xl font-bold text-textColor">Asif.</span>
           </Link>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-2 sm:space-x-6">
             <nav className="hidden md:flex items-center space-x-6">
               <Link
                 href="#hero"
@@ -66,7 +66,7 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-sm transition-colors">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-sm transition-colors border-b border-gray-400/20">
       <div className="container flex h-16 items-center justify-between px-4 mx-auto">
         <Link href="/" className="flex items-center gap-1">
           <Image
@@ -74,12 +74,12 @@ export function Header() {
             alt="Asif Zulfiqar"
             width={40}
             height={40}
-            className="rounded-full border-2 border-primary"
+            className="rounded-full border border-gray-300"
           />
           <span className="text-xl font-bold text-textColor">Asif.</span>
         </Link>
-        <div className="flex items-center space-x-6">
-          <nav className="hidden md:flex items-center space-x-4 sm:space-x-6">
+        <div className="flex items-center space-x-2 sm:space-x-6">
+          <nav className="hidden md:flex items-center space-x-6">
             <Link
               href="#hero"
               className="text-sm font-medium text-textColor transition-colors hover:text-primary"
