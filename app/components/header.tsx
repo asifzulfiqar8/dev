@@ -42,12 +42,6 @@ export function Header() {
               >
                 Projects
               </Link>
-              <Link
-                href="#about"
-                className="text-sm font-medium text-textColor transition-colors hover:text-primary"
-              >
-                About
-              </Link>
             </nav>
             <div className="w-9 h-9 flex items-center justify-center rounded-lg border border-gray-400 bg-bgColor">
               <span className="sr-only">Toggle theme</span>
@@ -91,12 +85,6 @@ export function Header() {
               className="text-sm font-medium text-textColor transition-colors hover:text-primary"
             >
               Projects
-            </Link>
-            <Link
-              href="#about"
-              className="text-sm font-medium text-textColor transition-colors hover:text-primary"
-            >
-              About
             </Link>
           </nav>
           <button
