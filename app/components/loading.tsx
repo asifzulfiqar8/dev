@@ -152,7 +152,7 @@ export function LoadingScreen() {
             >
               {progress}%
             </motion.div>
-            {/* Percentage Bar */}
+            {/* Percentage Bar Container */}
             <motion.div
               initial={{ width: 0, opacity: 0 }}
               animate={{ width: "240px", opacity: 1 }}
