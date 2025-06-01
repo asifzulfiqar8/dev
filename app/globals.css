@@ -4,7 +4,9 @@
 :root {
   --bg-color: #F2F2F2;
   --text-color: #1a1818;
-  --primary: #125bed;
+  /* --primary: #10B981; */
+  /* --primary: #06B6D4; */
+  --primary: #00aefb;
   --secondary: #ff4500;
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-geist: "Geist Mono", monospace;
@@ -13,7 +15,9 @@
 .dark {
   --bg-color: #1a1818;
   --text-color: #F2F2F2;
-  --primary: #125bed;
+  /* --primary: #10B981; */
+  /* --primary: #06B6D4; */
+  --primary: #00aefb;
   --secondary: #ff4500;
 }
 
@@ -30,6 +34,10 @@
 body {
   font-family: var(--font-sans) !important;
   cursor: none !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Show cursor on interactive elements */
