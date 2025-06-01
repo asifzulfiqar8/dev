@@ -27,7 +27,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col items-start gap-12"
+          className="flex flex-col items-center text-center gap-12"
         >
           {/* Tag */}
           <motion.div
@@ -56,7 +56,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="max-w-2xl text-lg sm:text-xl text-textColor/80"
+              className="max-w-2xl mx-auto text-lg sm:text-xl text-textColor/80"
             >
               A full-stack developer specializing in building exceptional
               digital experiences. Currently focused on building modern web
@@ -69,7 +69,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
             {/* Primary Button */}
             <Link
