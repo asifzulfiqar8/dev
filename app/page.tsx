@@ -1,6 +1,7 @@
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { HeroSection } from "./components/sections/hero";
+import { ProjectsSection } from "./components/sections/projects";
 
 // This enables Static Site Generation
 export const dynamic = "force-static";
@@ -19,6 +20,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <ProjectsSection />
       </main>
       <Footer />
     </>
