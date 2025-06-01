@@ -17,7 +17,7 @@ export function Header() {
   if (!mounted) {
     return (
       <header className="sticky top-0 z-50 w-full backdrop-blur-sm transition-colors border-b border-gray-400/20">
-        <div className="container flex h-16 items-center justify-between px-4 mx-auto">
+        <div className="max-w-7xl flex h-16 items-center justify-between px-4 mx-auto">
           <Link href="/" className="flex items-center gap-1">
             <Image
               src="/images/asif.png"
@@ -67,7 +67,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-sm transition-colors border-b border-gray-400/20">
-      <div className="container flex h-16 items-center justify-between px-4 mx-auto">
+      <div className="max-w-7xl flex h-16 items-center justify-between px-4 mx-auto">
         <Link href="/" className="flex items-center gap-1">
           <Image
             src="/images/asif.png"

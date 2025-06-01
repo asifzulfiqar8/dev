@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./providers/theme-provider";
+import { RootProvider } from "./components/providers/root-provider";
 
 const geist = Geist({ subsets: ["latin"] });
 
@@ -62,7 +62,7 @@ export default function RootLayout({
       <body
         className={`${geist.className} antialiased min-h-screen bg-bgColor flex flex-col`}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <RootProvider>{children}</RootProvider>
       </body>
     </html>
   );
