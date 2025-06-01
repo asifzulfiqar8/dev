@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, MoveRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -27,7 +27,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col items-center text-center gap-12"
+          className="flex flex-col items-center text-center gap-12 md:gap-16"
         >
           {/* Tag */}
           <motion.div
@@ -43,7 +43,7 @@ export function HeroSection() {
           </motion.div>
 
           {/* Main content */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,11 +56,18 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="max-w-2xl mx-auto text-lg sm:text-xl text-textColor/80"
+              className="max-w-2xl mx-auto text-base sm:text-xl text-textColor/80"
             >
-              A full-stack developer specializing in building exceptional
-              digital experiences. Currently focused on building modern web
-              applications with Next.js and TypeScript.
+              Modern Web Engineer | React, Next.js, Node.js & LLM Integrations
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="max-w-2xl mx-auto text-sm sm:text-base text-textColor/80"
+            >
+              Turning ideas into sleek, scalable web apps — with code that’s
+              built to last.
             </motion.p>
           </div>
 
@@ -68,7 +75,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
             {/* Primary Button */}
@@ -76,20 +83,8 @@ export function HeroSection() {
               href="/images/asifzulfqar-resume.pdf"
               className="group relative inline-flex items-center justify-center gap-2 h-12 px-6 bg-primary text-white rounded-lg transition-all hover:bg-primary/90 active:scale-[0.98]"
             >
-              <span className="font-medium">Download Resume</span>
-              <svg
-                className="w-5 h-5 transition-transform group-hover:translate-x-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
+              <span className="font-medium">See Resume</span>
+              <MoveRight className="w-4 h-4" />
             </Link>
 
             {/* Secondary Button */}
