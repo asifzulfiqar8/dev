@@ -29,8 +29,20 @@
 
 body {
   font-family: var(--font-sans) !important;
+  cursor: none !important;
 }
 
-button {
-  cursor: pointer !important;
+/* Show cursor on interactive elements */
+a, 
+button,
+input,
+textarea,
+select {
+  cursor: none !important;
+}
+
+/* Add hover state for interactive elements */
+a:hover,
+button:hover {
+  cursor: none !important;
 }
