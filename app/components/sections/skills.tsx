@@ -62,7 +62,10 @@ function MovingCards({
       ref={containerRef}
       className="relative flex overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
     >
-      <motion.div style={{ x: translateX }} className="flex gap-4 min-w-max">
+      <motion.div
+        style={{ x: translateX }}
+        className="flex gap-1 md:gap-4 min-w-max"
+      >
         {/* Original set */}
         {items.map((item) => (
           <SkillIcon key={item.name} {...item} />
@@ -92,7 +95,7 @@ export function SkillsSection() {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold tracking-tight mb-4"
           >
-            Skills & Technologies
+            Technical Expertise
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -106,7 +109,7 @@ export function SkillsSection() {
         </div>
 
         {/* Skills Rows with Scroll-based Movement */}
-        <div className="space-y-4 grid place-items-center">
+        <div className="space-y-1 md:space-y-3 grid place-items-center">
           <MovingCards
             items={skillsData.row1}
             direction="left"
