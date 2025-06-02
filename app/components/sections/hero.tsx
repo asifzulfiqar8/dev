@@ -22,7 +22,7 @@ export function HeroSection() {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 sm:px-8 sm:py-16">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-12 sm:px-8 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,9 +56,10 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="max-w-2xl mx-auto text-base sm:text-xl text-textColor/80"
+              className="max-w-3xl mx-auto text-base sm:text-xl text-textColor/80"
             >
-              Modern Web Engineer | React, Next.js, Node.js & LLM Integrations
+              I build modern scalable web apps using React, Next.js, Node.js &
+              LLM Integrations
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -66,8 +67,8 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="max-w-2xl mx-auto text-sm sm:text-base text-textColor/80"
             >
-              Turning ideas into sleek, scalable web apps — with code that’s
-              built to last.
+              You need someone who delivers on time, with clean code and clear
+              communication
             </motion.p>
           </div>
 
