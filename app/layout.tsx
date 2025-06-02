@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import { RootProvider } from "./components/providers/root-provider";
+import { SmoothScroll } from "./components/smooth-scroll";
 
 const geist = Geist({ subsets: ["latin"] });
 
@@ -71,7 +72,9 @@ export default function RootLayout({
       <body
         className={`${geist.className} antialiased min-h-screen bg-bgColor flex flex-col`}
       >
-        <RootProvider>{children}</RootProvider>
+        <RootProvider>
+          <SmoothScroll>{children}</SmoothScroll>
+        </RootProvider>
       </body>
     </html>
   );
